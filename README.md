@@ -14,4 +14,4 @@ Denne applikasjonen brukes for å bestille billetter. Informasjonen som skrives 
 Laget for oblig 3 i faget Data1700.
 
 
-Link til video demo: 
+Link til video demo: https://youtu.be/m103spgmO9U
