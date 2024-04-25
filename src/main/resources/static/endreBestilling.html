@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endre Bestilling</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="endreBestilling.js"></script>
+    <script src="validering.js"></script>
+    <script src="bestilling.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+                <h1>Endring av kinobilletter</h1>
+
+            <form class="form" id="infoBillett">
+                <input type="hidden" id="id"/>
+                <div class="form-group">
+                    <label for="velgFilm">Film</label>
+                    <select class="form-control select2" aria-label="Default select example" id="velgFilm">
+                        <option value="" selected disabled hidden>Velg film her</option>
+                        <option value ="Mice Wars">Mice Wars</option>
+                        <option value ="Movie: The Movie">Movie: The Movie</option>
+                        <option value ="Javascript 2">Javascript 2</option>
+                        <option value ="Shaolin Soccer">Shaolin Soccer</option>
+                    </select> <span style="color: red" id="filmFeil" class='feil-melding'></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="antall"> Antall </label>
+                    <input type="text" class="form-control" size="1" id="antall" onchange="validerAntall(this.value)">
+                    <span style="color: red" id="antallFeil" class='feil-melding'></span>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id="fornavn" onchange="validerFornavn(this.value)">
+                    <span style="color: red" id="fornavnFeil"></span>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id="etternavn" onchange="validerEtternavn(this.value)">
+                    <span style="color: red" id="etternavnFeil"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnummer</label>
+                    <input type="text" class="form-control" id="telefonnr" onchange="validerTelefonnr(this.value)">
+                    <span style="color: red" id="telefonnrFeil"></span>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text" class="form-control" id="epost" onchange="validerEpost(this.value)">
+                    <span style="color: red" id="epostFeil"></span>
+                </div>
+            </form>
+
+            <div class="form-group">
+            <button class="btn btn-primary" onclick="endreBestilling2()">Endre</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
