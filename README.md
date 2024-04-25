@@ -2,7 +2,7 @@ OsloMet brukernavn: vingo2352
 
 GitHub brukernavn: VinceNrepeat
 
-GitHub repo URL: 
+GitHub repo URL: https://github.com/VinceNrepeat/Data1700-Oblig3.git
 
 Fullt Navn: Vincent Ngo
 
